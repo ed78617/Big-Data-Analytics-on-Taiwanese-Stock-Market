@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title></title> 
+
+    </head>
+<body>
+
+<p> stock ID:
+<select id="selectNumber">
+    <option>Choose a number</option>
+</select>
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+<script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+<script src="https://d3js.org/d3-request.v1.min.js"></script>
+
+<script src="main.js"></script>
+<table id = "table0">
+       <td id="col1">
+           <form>
+               <input type="button" value="show" onclick="addImage()" />
+           </form>
+       </td>
+</table>
+<table id="table">
+   <tr>
+       <td id = "detail"></td>
+       <td id = "img"></td>
+   </tr>
+</table>
+</body>
+</html>
