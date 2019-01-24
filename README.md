@@ -3,7 +3,7 @@
 ### Abstract
 Since many people crave to maximize their profits on all their stock trades, this project will focus on the analysis of stock data from the website of Taiwan Stock Exchange Corporation. We tried spark regression algorithms to make predictions, built a stock screener, and made a thorough trend analysis by conducting a comprehensive backtest. We will introduce some APIs and show how we fetch stock data and build the whole analysis system. Some regression results and the backtesting results filtered by our stock screener will be shown. Finally, we made an HTML interface for users to easily access our results of data analysis.
 
-### ALGORITHM
+### Algorithms
 For API tools, besides Numpy and Pandas, which are basic tools for data analysis, we first used String IO to request and crawl stock data from the website of TWSE, and convert them into a DataFrame object. Then, we sort data by our stock screener, and use TA-lib to compute the exponential moving average (EMA) for all stocks we pick. Finally, Matplotlib (especially MPL.Finance) helps us to draw candlestick charts and visualize the fluctuations of stock prices.
 
 We then obtain a pair of short-period EMAs for each stock by performing backtest based on a modified double crossover method. Unlike conventional double crossover method, our trading strategy is subject to a set of rigorous conditions, thus the selected pairs of EMA curves correspond to higher ROI.
